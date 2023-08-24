@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.description,
+.timetable,
+.sponsors {
+    background: -webkit-linear-gradient(90deg, rgb(255, 245, 223), rgb(187, 202, 215), rgb(181, 182, 195));
+    background: -moz-linear-gradient(90deg, rgb(255, 245, 223), rgb(187, 202, 215), rgb(181, 182, 195));
+    background: linear-gradient(90deg, rgb(255, 245, 223), rgb(187, 202, 215), rgb(181, 182, 195));
+}
+
+/* основная секция */
+
+.greeting {
+    background: url("images/259296145.jpg");
+    background-size: cover;
+    color: #fefefe;
+}
+
+.greeting_shadow {
+    background: #00000045;
+}
+
+.greeting-description {
+    padding: 6.25rem;
+    text-align: center;
+}
+
+.greeting-date {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+
+.greeting-header {
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+
+/* конец основной секции */
+
+/* секция с описанием */
+
+.description {
+    padding: 1.25rem 6.875rem;
+}
+
+.description-content {
+    display: flex;
+}
+
+.description-program {
+    width: 70%;
+    padding-right: 50px;
+}
+
+.description-program-about {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.description-program-about__strong {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.description-info {
+    width: 30%;
+}
+
+.info-header {
+    font-size: 1rem;
+}
+
+.info-description {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+/* конец секции с описанием */
+
+/* секцмя программы */
+
+.programs-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.programs-description_header {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.programs-description_about {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.programs-includes {
+    display: flex;
+    padding: 2rem 0;
+}
+
+.includes-block {
+    width: 33%;
+    padding: 25px;
+}
+
+.includes-block > img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px grey;
+}
+
+/* конец секции программ */
+
+/* секция расписание */
+
+.timetable-header {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.timetable-day {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+li {
+    line-height: 1.6rem;
+}
+
+.timetable-date {
+    text-align: center;
+}
+
+.timetable-date > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* конец секции расписание */
+
+
+/* секция покупки билетов */
+.price-ticket {
+    background: url("images/259275758.jpg");
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.price-ticket-content {
+    padding: 1rem 0;
+}
+
+.price-ticket-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.button {
+    background: #2c7986;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.button > a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fefefe;
+}
+
+/* конец секции покупки билетов */
+
+/* секция спонсоры */
+
+.sponsors-content {
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.sponsors-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sponsors-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsors-block > img {
+    height: 120px;
+    filter: opacity(0.5);
+}
+
+/* конец секции спонсоров */
+
+
+/* секция соц сети */
+
+.location-content {
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.location-social_media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.ikon {
+    text-align: center;
+    width: 4.375rem;
+    height: 4.375rem;
+    background: black;
+    color: #fefefe;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 0.875rem;
+
+}
+/* конец секции соц сети */
