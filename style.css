@@ -23,6 +23,7 @@
 
 .greeting_shadow {
     background: #00000045;
+    padding: 12.5rem 12.5rem;
 }
 
 .greeting-description {
@@ -51,11 +52,12 @@
 
 .description-content {
     display: flex;
+    width: 100%;
 }
 
 .description-program {
     width: 70%;
-    padding-right: 50px;
+    padding: 2.5rem 3.125rem 2.5rem 0;
 }
 
 .description-program-about {
@@ -72,6 +74,7 @@
 
 .description-info {
     width: 30%;
+    padding: 2.5rem 3.125rem 2.5rem 0;
 }
 
 .info-header {
@@ -81,6 +84,7 @@
 .info-description {
     font-size: 0.875rem;
     font-weight: 300;
+    line-height: 1.4rem;
 }
 
 /* конец секции с описанием */
@@ -91,11 +95,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 3rem 3rem 1rem 3rem;
 }
 
 .programs-description_header {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -106,7 +110,9 @@
 
 .programs-includes {
     display: flex;
+    flex-wrap: wrap;
     padding: 2rem 0;
+    width: 100%;
 }
 
 .includes-block {
@@ -120,6 +126,13 @@
     box-shadow: 10px 10px 20px grey;
 }
 
+.includes-block > p {
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
 /* конец секции программ */
 
 /* секция расписание */
@@ -131,7 +144,8 @@
 
 .timetable-day {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
 }
 
 ul {
@@ -145,11 +159,16 @@ li {
 
 .timetable-date {
     text-align: center;
+    width: 50%;
 }
 
 .timetable-date > h3 {
     font-size: 1rem;
     font-weight: 500;
+}
+
+.timetable-full-day {
+    width: 50%;
 }
 
 /* конец секции расписание */
@@ -161,11 +180,12 @@ li {
     background-size: cover;
     color: #000000;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
 }
 
 .price-ticket-content {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .price-ticket-header {
@@ -174,15 +194,20 @@ li {
 }
 
 .button {
-    background: #2c7986;
+    background: #aed3f0;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
+    border: 0px solid #aed3f0;
+}
+
+.button:hover {
+    background: #dfebf3;
 }
 
 .button > a {
     text-decoration: none;
     font-size: 1rem;
-    color: #fefefe;
+    color: #333437;
 }
 
 /* конец секции покупки билетов */
@@ -191,23 +216,27 @@ li {
 
 .sponsors-content {
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .sponsors-header {
     font-size: 1.5rem;
     font-weight: 600;
+    padding-bottom: 0.8rem;
 }
 
 .sponsors-block {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
+    padding-top: 2rem;
 }
 
 .sponsors-block > img {
     height: 120px;
     filter: opacity(0.5);
+    width: 16%;
 }
 
 /* конец секции спонсоров */
