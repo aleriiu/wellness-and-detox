@@ -13,17 +13,17 @@
     background: linear-gradient(90deg, rgb(255, 245, 223), rgb(187, 202, 215), rgb(181, 182, 195));
 }
 
+.shadow {
+    background: #00000045;
+    padding: 12.5rem 12.5rem;
+}
+
 /* основная секция */
 
 .greeting {
     background: url("images/259296145.jpg");
     background-size: cover;
     color: #fefefe;
-}
-
-.greeting_shadow {
-    background: #00000045;
-    padding: 12.5rem 12.5rem;
 }
 
 .greeting-description {
@@ -120,13 +120,13 @@
     padding: 25px;
 }
 
-.includes-block > img {
+.includes-block>img {
     width: 100%;
     border-radius: 50%;
     box-shadow: 10px 10px 20px grey;
 }
 
-.includes-block > p {
+.includes-block>p {
     text-align: center;
     padding-top: 1rem;
     font-weight: 500;
@@ -162,7 +162,7 @@ li {
     width: 50%;
 }
 
-.timetable-date > h3 {
+.timetable-date>h3 {
     font-size: 1rem;
     font-weight: 500;
 }
@@ -180,12 +180,16 @@ li {
     background-size: cover;
     color: #000000;
     text-align: center;
-    padding-bottom: 2rem;
     width: 100%;
+}
+
+.price-ticket-shadow {
+    padding: 2rem;
 }
 
 .price-ticket-content {
     padding: 2rem 0;
+    color: #fefefe;
 }
 
 .price-ticket-header {
@@ -204,7 +208,7 @@ li {
     background: #dfebf3;
 }
 
-.button > a {
+.button>a {
     text-decoration: none;
     font-size: 1rem;
     color: #333437;
@@ -233,7 +237,7 @@ li {
     padding-top: 2rem;
 }
 
-.sponsors-block > img {
+.sponsors-block>img {
     height: 120px;
     filter: opacity(0.5);
     width: 16%;
@@ -249,22 +253,40 @@ li {
     padding: 2rem 2rem;
 }
 
+.location-content > h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
 .location-social_media {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding-top: 1rem;
 }
 
-.ikon {
-    text-align: center;
-    width: 4.375rem;
-    height: 4.375rem;
-    background: black;
-    color: #fefefe;
-    border-radius: 50%;
-    font-size: 13px;
-    padding: 0.875rem;
-
+.fa-brands {
+    font-size: 40px;
+    padding-top: 1rem;
 }
+
+.fa-facebook {
+    color: #3b5998;
+    padding-right: 2rem;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 2rem;
+}
+
+.fa-youtube {
+    color: #c4302b;
+}
+
 /* конец секции соц сети */
