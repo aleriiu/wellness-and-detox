@@ -15,7 +15,7 @@
 
 .shadow {
     background: #00000045;
-    padding: 12.5rem 12.5rem;
+    padding: 7.5rem 12.5rem;
 }
 
 /* основная секция */
@@ -26,8 +26,14 @@
     color: #fefefe;
 }
 
+.greeting_shadow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .greeting-description {
-    padding: 6.25rem;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -36,10 +42,27 @@
     font-weight: 400;
 }
 
-
 .greeting-header {
     font-size: 2.625rem;
     font-weight: 700;
+}
+
+.button_greeting {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #5dbbd099;
+    border: 0px solid #5dbbd0;
+}
+
+.button_greeting:hover {
+    background: #5dbbd0;
+}
+
+.button_greeting > a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fefefe;
 }
 
 /* конец основной секции */
@@ -101,6 +124,7 @@
 .programs-description_header {
     font-size: 1.5rem;
     font-weight: 500;
+    padding-bottom: 0.8rem;
 }
 
 .programs-description_about {
@@ -111,17 +135,18 @@
 .programs-includes {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 0;
     width: 100%;
+    padding: 0 2rem;
 }
 
 .includes-block {
     width: 33%;
     padding: 25px;
+    text-align: center;
 }
 
 .includes-block>img {
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
     box-shadow: 10px 10px 20px grey;
 }
@@ -130,12 +155,16 @@
     text-align: center;
     padding-top: 1rem;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 /* конец секции программ */
 
 /* секция расписание */
+
+.timetable-content {
+    padding-bottom: 1rem;
+}
 
 .timetable-header {
     padding: 2rem 0;
@@ -164,11 +193,15 @@ li {
 
 .timetable-date>h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-.timetable-full-day {
+.timetable-clock {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
 }
 
 /* конец секции расписание */
@@ -238,7 +271,6 @@ li {
 }
 
 .sponsors-block>img {
-    height: 120px;
     filter: opacity(0.5);
     width: 16%;
 }
@@ -253,7 +285,12 @@ li {
     padding: 2rem 2rem;
 }
 
-.location-content > h2 {
+.location-content>h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.location-content>h2 {
     font-size: 1.6rem;
     font-weight: 500;
     padding-bottom: 1rem;
